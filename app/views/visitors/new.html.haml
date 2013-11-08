@@ -1,1 +1,12 @@
-%h3 Home
+-@nocontent = true
+-@nonav = true
+.welcome
+  .container
+    .logo
+      <a href="" class="logo-main">#{Settings.sitename}</a>
+      <a href="" class="logo-en">#{Settings.domain}</a>
+    %form.form-inline
+      %input.input-xlarge{type: 'text',name: 'q',id: 'q'}
+      %button.btn.btn-primary{type: 'submit'} 商机搜索
+      %span.help-block
+        基于全文索引的商机搜索
